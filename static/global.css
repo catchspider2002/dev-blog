@@ -276,9 +276,6 @@ button:active {
   }
 } */
 
-
-
-
 @font-face {
   font-family: "League Spartan";
   src: url("./fonts/LeagueSpartan-Bold.otf") format("otf");
@@ -286,9 +283,9 @@ button:active {
   font-style: normal;
   font-display: block;
 }
- 
+
 @font-face {
-  font-family: "periodic-table"; 
+  font-family: "periodic-table";
   src: url("./fonts/periodic-table.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -370,6 +367,7 @@ body {
   margin: 0;
   color: gray;
   background-color: black;
+  font-size: 20px;
 }
 
 *,
@@ -518,6 +516,11 @@ button:hover {
   .navBar{
   } */
 
+@media (max-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
 @media (max-width: 1280px) {
   .container {
     max-width: 1024px;
@@ -529,11 +532,17 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
   .container {
     max-width: 640px;
   }
 }
 @media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
   .container {
     max-width: 100%;
   }

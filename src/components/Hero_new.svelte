@@ -5,7 +5,7 @@
     newtags.push({ tag: letter });
   });
   console.log(title);
-  let lang = tags[0];
+  let lang = tags[0]; 
   let color;
 
   switch (lang) {
@@ -32,48 +32,10 @@
       break;
   }
 
-  import html2canvas from "html2canvas";
   import JavascriptSvg from "./JavascriptSVG.svelte";
-
-  function screenshot() {
-    console.log("screenshot");
-    // html2canvas(document.getElementById("target1")).then(function(canvas) {
-    html2canvas(document.body, {
-      width: 1200,
-      height: 627,
-      y: 50
-    }).then(function (canvas) {
-      console.log("before append");
-      document.body.appendChild(canvas);
-    });
-  }
 </script>
 
 <style>
-  :root {
-    --bg: black;
-    --fg: white;
-    /* 		--bg: white;
-		--fg: black; */
-  }
-  :global(body) {
-    font-size: 20px;
-  }
-  @media (max-width: 1440px) {
-    :global(body) {
-      font-size: 18px;
-    }
-  }
-  @media (max-width: 768px) {
-    :global(body) {
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 400px) {
-    :global(body) {
-      font-size: 14px;
-    }
-  }
   .header {
     /* min-height: 630px; */
     /* padding: 2em; */
@@ -89,5 +51,3 @@
 <section class="header" style="background-color: hsl({color});">
   <JavascriptSvg {color} {lang} />
 </section>
-
-<button on:click={screenshot}>to image</button>

@@ -62,12 +62,12 @@
             style="opacity:0.7" />
         </g>
       </svg>
-      <span class="text-xl body-text">Periodic-Table.io</span>
+      <span class="text-xl body-text">Dev Blog</span>
     </a>
     <nav class="md:ml-auto mx-4 flex flex-wrap items-center justify-center">
-      <a class="mx-3" href="#a">Periodic-Table</a>
-      <a class="mx-3" href="#a">Printables</a>
-      <a class="mx-3" href="#a">Store</a>
+      <!-- <a class="mx-3" href="#a">Periodic-Table</a> -->
+      <!-- <a class="mx-3" href="#a">Printables</a> -->
+      <!-- <a class="mx-3" href="#a">Store</a> -->
       <a class="mx-3" href="#a">
         <span id="themeIcon" class="iconFont">t</span>
         Theme

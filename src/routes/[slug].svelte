@@ -17,6 +17,7 @@
   export let post;
   import NavBar from "../components/NavBar.svelte";
   import Blog from "../components/Blog.svelte";
+  import CodeTest from "../components/Code.svelte";
 </script>
 
 <style>

@@ -12,9 +12,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@simonwep/pickr": "^1.7.2",
     "compression": "^1.7.4",
-    "html2canvas": "^1.0.0-rc.7",
     "polka": "next",
     "prettier": "^2.1.1",
     "save-svg-as-png": "^1.4.17",
