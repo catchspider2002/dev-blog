@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#333333" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115585789-3"></script>
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-115585789-3");
+    </script>
+    <title>Periodic-Table.io</title>
+
+    %sapper.base%
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" type="image/png" href="icons/android-chrome-512x512.png" />
+    <!-- <link rel="stylesheet" href="tailwind.min.css" /> -->
+    <!-- <link rel="stylesheet" href="style.min.css" /> -->
+    <link rel="stylesheet" href="global.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/periodic-table.woff" as="font" type="font/woff" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/LeagueSpartan-Bold.otf" as="font" type="font/woff" crossorigin="anonymous" />
+
+    <!-- <link rel="canonical" href="https://blog.periodic-table.io" /> -->
+    <!-- <meta name="description" content="Interactive periodic table of the chemical elements in 38 languages - Includes properties, history, name origin, facts, applications, hazards, isotopes and more" />
+    <meta name="keywords" content="Periodic Table, chemical, elements, interactive, PWA, properties, history, name origin, images, applications, hazards, electron shell, diagram, chemistry, electron configuration, isotopes, information" /> -->
+    <meta name="author" content="Naveen CS" />
+    <meta name="theme-color" content="#44337a" />
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index,follow" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta property="og:site_name" content="Periodic-Table.io" />
+    <!-- <meta property="og:title" content="Periodic-Table.io" />
+    <meta property="og:description" content="Interactive periodic table of the chemical elements in 38 languages - Includes properties, history, name origin, facts, applications, hazards, isotopes and more" />
+    <meta property="og:image" content="https://blog.periodic-table.io/logo-512.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blog.periodic-table.io" /> -->
+
+    <!-- <meta name="twitter:title" content="Periodic-Table.io" />
+    <meta name="twitter:description" content="Interactive periodic table of the chemical elements in 38 languages - Includes properties, history, name origin, facts, applications, hazards, isotopes and more" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@periodictableio" />
+    <meta name="twitter:image" content="https://blog.periodic-table.io/TwitterBG.png" />
+    <meta name="twitter:image:src" content="https://blog.periodic-table.io/TwitterBG.png" /> -->
+
+    <!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+    %sapper.styles%
+
+    <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+    %sapper.head%
+  </head>
+  <body>
+    <!-- The application will be rendered inside this element,
+	     because `src/client.js` references it -->
+    <div id="sapper">%sapper.html%</div>
+
+    <!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+    %sapper.scripts%
+  </body>
+</html>
