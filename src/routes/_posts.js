@@ -20,17 +20,13 @@ const posts = [
       return array.filter((item) =&gt; item !== value);
     };</code></pre>
     
-    <CodeTest lang="javascript">
-	{const 1removeArrayValue = (array, value) =>
-  array.filter((item) => item !== value);}
-</CodeTest>
     Since there is only a single return line, you can further simplify this as 
       
     
-    <pre data-lang="javascript" class="svelte-1fwm5ja language-javascript"><code class=" svelte-1fwm5ja language-javascript" dir="ltr">const removeArrayValue = (array, value) =&gt;
+    <pre data-lang="javascript" class="language-javascript"><code class=" svelte-1fwm5ja language-javascript" dir="ltr">const removeArrayValue = (array, value) =&gt;
       array.filter((item) =&gt; item !== value);</code></pre>
     check
-    <pre data-lang="css" class="svelte-1fwm5ja language-css"><code class=" svelte-1fwm5ja language-css" dir="ltr">pre[data-lang] {
+    <pre data-lang="css" class="language-css"><code class=" svelte-1fwm5ja language-css" dir="ltr">pre[data-lang] {
       position: relative;
       padding: 1.5rem;
       background-color: #1a202c;

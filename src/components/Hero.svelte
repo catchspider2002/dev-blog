@@ -5,7 +5,7 @@
     newtags.push({ tag: letter });
   });
   console.log(title);
-  let lang = tags[0]; 
+  let lang = tags[0];  
   let color;
 
   switch (lang) {
